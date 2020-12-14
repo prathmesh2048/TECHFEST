@@ -3796,7 +3796,10 @@
 /* Banner */
 
 	.banner {
-		background-image:url('slide01.jpg');
+		background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),url('slide01.jpg');
 
 		/* Background image is centered vertically and horizontally at all times */
 		  background-position: center center;
@@ -3807,7 +3810,7 @@
 		  /* Background image is fixed in the viewport so that it doesn't move when
 		     the content's height is greater than the image's height */
 		  background-attachment: fixed;
-
+ position: relative;
 		  /* This is what makes the background image rescale based
 		     on the container's size */
 		  background-size: cover;
@@ -3815,12 +3818,28 @@
 			width:100%;
 	}
 
-.thumbnail{
-	position: relative;
-	text-align: center;
-	font-size: 3em;
+	.mid h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
 }
-
+.mid p{
+	text-align: center;
+	color: white;
+	margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+}
 
 
 /* Main */
