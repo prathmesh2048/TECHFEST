@@ -1770,7 +1770,9 @@
 	.align-center {
 		text-align: center;
 	}
-
+	.align-center h2{
+		color: black;
+	}
 	.align-right {
 		text-align: right;
 	}
