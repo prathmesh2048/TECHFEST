@@ -26,6 +26,7 @@
 
 /* -------------------------------job search page----------------------------------------------- */
 /* -----------header screen -------------*/
+
 .head{
     margin: 0px;
     width: 100%;
@@ -34,6 +35,15 @@
     display:flex ;
     align-items: center;
     justify-content: center;
+}
+.hinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.575);
 }
 .inner{
     text-align: center;
@@ -63,17 +73,18 @@ hr{
 .inner a, .categories a{
     font-size: 18px;
     text-decoration: none;
-    color: rgb(199, 199, 199);
-    border: 1px solid rgb(199, 199, 199);
-    padding: 5px 10px;
+    color: rgb(255, 251, 251);
+    border: 1px solid rgb(255, 252, 252);
+    padding: 10px 40px;
     margin: 5px;
+    border-radius: 30px;
     transition: 0.5s;
-    
+    font-weight: bold;
 }
 .inner a:hover, .categories a:hover{
-    border: 1px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    background-color:  rgb(199, 199, 199);;
+    border: 1px solid #F1C40F;
+    color: #F1C40F;
+    background-color:  rgb(255, 255, 255);;
 }
 
 /* -----------Popular Category -------------*/
@@ -81,7 +92,7 @@ hr{
     width: 100%;
     text-align: center;
     height: 100vh;
-    background: rgb(145, 142, 142);
+    background:#E67E22 ;
 }
 .categories h1, .find h1{
     font-size: 50px;
@@ -104,6 +115,7 @@ hr{
     margin: 30px;
     background-image: linear-gradient( 110.3deg,  rgb(185, 219, 255) 8.8%, rgb(198, 212, 228) 95.1% );
     transition: 0.5s;
+    box-shadow:  5px 5px  rgba(58, 31, 209, 0.658);
 }
 .cati:hover{
     transform: translateY(-10px);
@@ -132,7 +144,7 @@ hr{
     width: 100%;
     height: 100vh;
     text-align: center;
-    background: linear-gradient( 110.3deg,  rgb(185, 219, 255) 8.8%, rgb(198, 212, 228) 95.1% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
 }
 .jobf{
     display: flex;
@@ -143,22 +155,23 @@ hr{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 50px;
-    margin: 5px;
+    height: 30px;
+    margin: 5px 450px 60px;
 }
 .nav3 a{
-    background: rgb(58, 31, 209);
+    border-radius: 30px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     margin: 5px;
     padding: 5px 10px;
     letter-spacing: 2px;
+    font-weight: bold;
     transition: 0.5s;
 }
 .nav3 a:hover{
-    color: rgb(58, 31, 209);
-    border: 2px solid rgb(58, 31, 209);
+    color: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
+    border: 3px solid radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
     background: rgb(0, 0, 0);
 }
 .list{
@@ -390,6 +403,8 @@ hr{
     font-size: 50px;
     font-family: 'langarregular';
 }
+/*--------------------------------------footer----------------------------------- */
+
 
 
 
