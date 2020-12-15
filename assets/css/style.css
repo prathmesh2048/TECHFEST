@@ -1,0 +1,604 @@
+/* -------------------------------fonts----------------------------------------------- */
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tekosemibold';
+    src: url('teko-semibold-webfont.woff2') format('woff2'),
+         url('teko-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'langarregular';
+    src: url('langar-regular-webfont.woff2') format('woff2'),
+         url('langar-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* -------------------------------job search page----------------------------------------------- */
+/* -----------header screen -------------*/
+.head{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background: url('../img2/back.jpg') no-repeat center center/cover;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.inner{
+    text-align: center;
+    padding: 50px;
+    margin: 0px 50px;
+    background: rgba(58, 31, 209, 0.658);
+    align-items: center;
+}
+.inner p{
+    color: rgb(255, 255, 255);
+}
+.inner h1{
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 30;
+}
+.inner input{
+    margin: 5px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 1px 5px;
+}
+hr{
+   border: 2px solid white;
+}
+.inner a, .categories a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+    border: 1px solid rgb(199, 199, 199);
+    padding: 5px 10px;
+    margin: 5px;
+    transition: 0.5s;
+    
+}
+.inner a:hover, .categories a:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color:  rgb(199, 199, 199);;
+}
+
+/* -----------Popular Category -------------*/
+.categories{
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    background: rgb(145, 142, 142);
+}
+.categories h1, .find h1{
+    font-size: 50px;
+}
+.categories hr{
+    margin: 0px 100px 10px;
+    width: auto;
+}
+.catlog{
+    margin: 0px 100px;
+    width: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cati{
+    border-radius: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 30px;
+    background-image: linear-gradient( 110.3deg,  rgb(185, 219, 255) 8.8%, rgb(198, 212, 228) 95.1% );
+    transition: 0.5s;
+}
+.cati:hover{
+    transform: translateY(-10px);
+}
+
+/* -----------How It Work-------------*/
+.categary2 .cati{
+    width: 300px;
+    border-radius: 15px;
+    background-image: linear-gradient( 110.3deg,  rgba(72,85,99,1) 8.8%, rgba(127,146,166,1) 95.1% );
+}
+.categary2 .cati h1{
+    color: black;
+}
+.categary2 .cati img{
+    width: 150px;
+    height: auto;
+}
+
+/* -----------Find Your Jobs-------------*/
+.find img{
+    width: 120px;
+    height: auto;
+}
+.find{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient( 110.3deg,  rgb(185, 219, 255) 8.8%, rgb(198, 212, 228) 95.1% );
+}
+.jobf{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: 5px;
+}
+.nav3 a{
+    background: rgb(58, 31, 209);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.nav3 a:hover{
+    color: rgb(58, 31, 209);
+    border: 2px solid rgb(58, 31, 209);
+    background: rgb(0, 0, 0);
+}
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.inner2{
+    padding: 0px 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
+    align-items: center; 
+}
+.inner3{
+    width: 100px;
+    text-align: left;
+}
+.inner3 a{
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgba(8, 8, 8, 0.699);
+    padding: 5px 7px;
+    transition: 0.5s;
+}
+.inner3 a:hover{
+    border: 2px solid rgba(8, 8, 8, 0.699);
+    color: rgba(8, 8, 8, 0.699);
+    background: rgb(255, 255, 255);
+}
+
+/* -------------------------------donate page----------------------------------------------- */
+/* -----------header screen-------------*/
+.dhome{
+    width: 100%;
+    height: 100vh;
+    background: url('../img2/home.png') no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.dinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    background: rgba(0, 0, 0, 0.418);
+    text-align: left;
+}
+.dinner2{
+    width: 646px;
+    padding-left: 136px;
+    float: right;
+}
+.dhome h1{
+    color: black;
+    font-size: 70px;
+    font-family: 'oswaldregular';
+}
+.dhome h1 span{
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F1C40F;
+   text-shadow: 2px 2px 1px  #F1C40F,4px 4px 2px  #F1C40F,6px 6px 3px  #F8C471 ,7px 7px 4px  #F9E79F;
+}
+.dinner a{
+    text-decoration: none;
+    margin-left: 10px ;
+    color: #ffffff;
+    border: 3px solid #E67E22;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #E67E22;
+    transition: 0.5s ease;
+    position: relative;
+    display: inline-block;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0005);
+}
+.dinner a:hover{
+    color: #F1C40F;
+    background-color: #ffffff;
+    border: 3px solid #F1C40F;
+}
+
+/* -----------awesome features-------------*/
+.dhome1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+hr{
+    height: 7px;
+    background-color: #E67E22;
+}
+.dhome1 h2{
+    font-size: 30px;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    color: black;
+    
+}
+.dhome1 p{
+    color: #D5DBDB;
+    font-size: 20px;
+}
+.feature{
+    display: flex;
+    justify-content: space-between;
+}
+.finner{
+    width: 831px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.linner div{
+    margin: 10px 0px;
+    border: 2px solid #E67E22;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px  #E67E22;
+}
+.linner h3{
+    font-size: 30px;
+    color: #F1C40F;
+    font-weight: bold;
+}
+.linner p{
+    font-size: 15px;
+    color: black;
+}
+
+/* -----------be s volunteer-------------*/
+.dhome2{
+    background: url('../img2/head.png') no-repeat center center/cover;
+    
+}
+.dhome2 .dinner{
+    text-align: center;
+}
+.dinner3{
+    padding: 50px 200px;
+}
+.dhome2 h1{
+    text-shadow: 3px 3px 3px #F5B041;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'tekosemibold';
+    letter-spacing: 3px;
+}
+
+/* -----------our mission-------------*/
+.dhome3{
+    width: 100%;
+    height: 100vh;
+    
+}
+.dhome3 h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+#tup{
+    background-color: #E67E22;
+    padding: 10px;
+}
+#in{
+    width: 750px;
+    height: auto;
+   background:  #E67E22;
+}
+.dhomei{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.dhomei div{
+    text-align: justify;
+    width: 550px;
+}
+.dhome3 img{ 
+    margin: 100px 0px 100px 0px;
+    border: 4px solid white;
+    width: 550px;
+    height: auto;
+}
+
+/* -----------learn more-------------*/
+.dhome4{
+    align-items: left;
+    background: url('../img2/give.png') no-repeat center center/cover;
+}
+.dhome4 .dinner3{
+    width: 750px;
+    margin-right: 460px;
+    text-align: left;
+    float: left;
+    padding: 50px 45px;
+}
+.dhome4 h1{
+    color: black;
+    font-size: 50px;
+    font-family: 'langarregular';
+}
+
+
+
+
+/*--------------------------------------media queries----------------------------------- */
+@media (min-width : 270px) and (max-width : 767px){
+    #nav{
+        height: 285px;
+        display: inline-block;
+    }
+    .categories {
+        height: 237vh;
+    }
+    .catlog{
+        margin: 0px;
+    }
+    .inner2{
+        flex-direction: column;
+        padding: 50px 3px;
+        margin: 2px;
+        border: 2px solid white;
+    }
+    .find{
+        height: 213vh;
+    }
+    .nav3{
+        height: 43px;
+        margin: 9px
+    }
+    .nav3 a{
+        letter-spacing: 0px;
+    }
+    .find img{
+        width: 70px;
+        height: auto;
+    }
+    .inner3{
+        padding: 5px;
+        text-align: center;
+        width: 190px;
+    }
+    hr{
+        margin: 30px;
+    }
+    .mid p{ 
+        font-size: 7px;
+    }
+    html {
+        font-size: 9pt;
+    }
+    .inner h1{
+        font-size: 11px;
+    }
+    .inner input{
+        margin: 8px;
+    }
+    .dinner{
+        text-align: center;
+    }
+    .dhome h1{
+        font-size: 29px;
+    }
+    .dinner2{
+        width: 646px;
+        padding-left: 0px;
+    }
+    .dinner a{
+        font-size: 9px;
+    }
+    .dhome1{
+        height: 153vh;
+        align-items: left;
+    }
+    .dhome3 img{
+        width: 423px;
+    }
+    .finner{
+        width: 402px;
+    }
+    .dinner3{
+        padding: 50px 65px;
+    }
+    .dhome2 h1{
+        font-size: 15px;
+    }
+    .dhome4 h1{
+        font-size: 23px;
+    }
+    .dhome4 .dinner3{
+        margin-right: 127px;
+    }
+}
+@media (min-width : 768px) and (max-width : 1023px){
+    #nav{
+        height: 224px;
+    }
+    .inner{
+        padding: 10px;
+    }
+    .inner input{
+        margin: 10px 6px;
+    }
+    .categories{
+        height: 254vh;
+    }
+    .nav3{
+        margin: 44px;
+    }
+    .find{
+        height: 131vh;
+    }
+    .inner3{
+        width: 151px;
+    }
+    .find img{
+        width: 89px;
+    }
+    .mid p {
+        font-size: 0.5rem;
+    }
+    .dhome1{
+        height: 152vh;
+    }
+    .finner{
+        width: 431px;
+    }
+    .dhome3{
+        height: 107vh;
+    }
+    .dhomei{
+        height: 106vh;
+    }
+    #in{
+        width: 550px;
+    }
+    .dhome3 img{
+        margin: 23px 0px 17px 79px;
+        width: 377px;
+    }
+    .dhome4 .dinner3 {
+        margin-right: 199px;
+    }
+}
+@media (min-width : 1024px) and (max-width : 1439px){
+    .wrapper > .inner{
+        width: 70rem;
+    }
+    .mid p {
+        font-size: 11px;
+    }
+    .nav3{
+        margin: 10px;
+    } 
+    .find{
+        height: 111vh;
+    }
+    #nav{
+        height: 110px;
+    }
+}
+@media (min-width : 1440px) and (max-width : 2559px){
+    #nav{
+        height: 110px;
+    }
+    .categories{
+        height: 103vh;
+    } 
+    .find {
+        height: 104vh;
+    }
+}
+@media (min-width : 2560px){
+    #nav img{
+        margin-top: 10px;
+    }
+    #nav{
+        height: 119px;
+    }
+    #nav ul li a {
+        font-size: 26px;
+    }
+    .inner p{
+        font-size: 30px;
+    }
+    .inner h1{
+        font-size: 88px;
+    }
+    .inner input{
+        padding: 12px 11px;
+        width: 313px;
+    }
+    .inner a, .categories a {
+        font-size: 31px;
+        padding: 9px 43px;
+    }
+    .cati{
+        padding: 31px;
+        margin: 87px;
+    }
+    .nav3{
+        margin: 49px;
+    }
+    .nav3 a, .inner3 {
+        font-size: 30px;
+    }
+    .inner3{
+        width: 183px;
+    }
+    .find img{
+        width: 211px;
+    }
+}
